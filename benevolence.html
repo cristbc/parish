@@ -86,9 +86,33 @@
             color: #666;
             margin-right: 0.5rem;
         }
+        /* Navigation Styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
     </style>
 </head>
 <body>
+    <div class="navigation">
+    <a href="index.html" class="nav-link">&larr; Back to Forms Index</a>
+</div>
     <h1>Parish Presbyterian Benevolence Fund Request</h1>
     
     <div class="note">Simple form for one-time or short-term assistance requests</div>
