@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Parish Presbyterian Forms</title>
     <style>
         body {
             font-family: "ET Book", Georgia, serif;
@@ -20,164 +21,80 @@
             padding-bottom: 0.5rem;
         }
         
-        h2 {
-            font-weight: normal;
-            font-size: 1.4rem;
-            margin-top: 2rem;
-            color: #666;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 0.3rem;
+        .description {
+            margin-bottom: 2rem;
             color: #444;
         }
         
-        input[type="text"],
-        input[type="tel"],
-        input[type="email"] {
-            width: 60%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 3px;
+        .form-links {
+            margin-top: 2rem;
+        }
+        
+        .form-link {
+            display: block;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #1a1a1a;
+            transition: all 0.2s ease;
+        }
+        
+        .form-link:hover {
+            background-color: #f9f9f9;
+            border-color: #ccc;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .form-title {
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
-            margin-left: 2rem;
+            color: #444;
         }
         
-        textarea {
-            width: 80%;
-            height: 4rem;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            margin-bottom: 0.5rem;
-            margin-left: 2rem;
-            resize: vertical;
-            font-family: inherit;
-            line-height: 1.5;
+        .form-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.4;
         }
         
-        .radio-group {
-            margin: 1rem 0 1rem 2rem;
-        }
-        
-        .radio-option {
-            margin-right: 2rem;
-            display: inline-block;
-        }
-        
-        .note {
-            font-style: italic;
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
             color: #666;
             font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        
-        .question {
-            margin-bottom: 1.5rem;
-        }
-        
-        .question-number {
-            color: #666;
-            margin-right: 0.5rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Parish Presbyterian Benevolence Fund Request</h1>
+    <h1>Parish Presbyterian Forms</h1>
     
-    <div class="note">Simple form for one-time or short-term assistance requests</div>
+    <div class="description">
+        This is a demo of the benevolence forms.
+    </div>
     
-    <h2>Contact Information</h2>
-    <div class="form-group">
-        <label>Date:</label>
-        <input type="text" name="date">
+    <div class="form-links">
+        <a href="benevolence.html" class="form-link">
+            <div class="form-title">Benevolence Fund Questionnaire</div>
+            <div class="form-description">
+                Complete application form for benevolence fund assistance requests. 
+                This form gathers applicant information, need details, and financial situation.
+            </div>
+        </a>
+        
+        <a href="financial.html" class="form-link">
+            <div class="form-title">Financial Details Form</div>
+            <div class="form-description">
+                Supplementary form for providing detailed financial information including income, 
+                expenses, assets, and liabilities to support benevolence fund applications.
+            </div>
+        </a>
     </div>
-    <div class="form-group">
-        <label>Name:</label>
-        <input type="text" name="name">
-    </div>
-    <div class="form-group">
-        <label>Phone:</label>
-        <input type="tel" name="phone">
-    </div>
-    <div class="form-group">
-        <label>Email:</label>
-        <input type="email" name="email">
-    </div>
-    <div class="form-group">
-        <label>Deacon's Name:</label>
-        <input type="text" name="deacon_name">
-    </div>
+    
 
-    <h2>Church Connection</h2>
-    <div class="radio-group">
-        <div class="radio-option">
-            <input type="radio" name="membership" id="member" value="member">
-            <label for="member">Member</label>
-        </div>
-        <div class="radio-option">
-            <input type="radio" name="membership" id="attendee" value="attendee">
-            <label for="attendee">Regular Attendee</label>
-        </div>
-        <div class="radio-option">
-            <input type="radio" name="membership" id="visitor" value="visitor">
-            <label for="visitor">Visitor</label>
-        </div>
-    </div>
-
-    <h2>Request Details</h2>
-    <div class="question">
-        <label><span class="question-number">1.</span>Who referred this request?</label>
-        <input type="text" name="referral">
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">2.</span>What assistance do you need?</label>
-        <textarea name="need_description"></textarea>
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">3.</span>Amount needed:</label>
-        <input type="text" name="amount">
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">4.</span>Who should receive payment? (utility company, landlord, etc.)</label>
-        <input type="text" name="payment_recipient">
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">5.</span>Brief explanation of circumstances:</label>
-        <textarea name="circumstances"></textarea>
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">6.</span>When is assistance needed?</label>
-        <input type="text" name="timeline">
-    </div>
-    
-    <div class="question">
-        <label><span class="question-number">7.</span>Have you received assistance from Parish Presbyterian in the past year? If yes, when?</label>
-        <input type="text" name="previous_assistance">
-    </div>
-
-    <h2>Diaconal Notes</h2>
-    <div class="form-group">
-        <label>Approved amount:</label>
-        <input type="text" name="approved_amount">
-    </div>
-    <div class="form-group">
-        <label>Approval date:</label>
-        <input type="text" name="approval_date">
-    </div>
-    <div class="form-group">
-        <label>Notes:</label>
-        <textarea name="notes"></textarea>
-    </div>
 </body>
 </html>
